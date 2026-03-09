@@ -1,0 +1,1 @@
+// Soal ini dijawab menggunakan bahasa C, tapi tidak apa-apa jika menggunakan extension CPP
