@@ -5,50 +5,46 @@ Buat program yang membaca satu karakter menggunakan getchar(), getche(), dan get
 Tampilkan karakter yang dimasukkan setelah setiap input.
 */
 #include <stdio.h>
-#include <conio.h>   // diperlukan untuk getch() dan getche()
-
+#include <conio.h>   
 int main()
 {
     char c1, c2, c3;
 
-    // ================================
-    // Input menggunakan getchar()
-    // getchar() membaca satu karakter dari keyboard
-    // Karakter yang diketik akan terlihat di layar
-    // ================================
     printf("Masukkan satu karakter (getchar): ");
-    c1 = getchar();   // membaca satu karakter
-
-    // menampilkan karakter yang dimasukkan
+    c1 = getchar();
+    
     printf("\nKarakter yang dimasukkan: %c\n\n", c1);
-
-
-    // Membersihkan buffer newline dari input sebelumnya
     getchar();
 
-
-    // ================================
-    // Input menggunakan getche()
-    // getche() membaca satu karakter dan langsung menampilkannya
-    // di layar (echo aktif)
-    // ================================
     printf("Masukkan satu karakter (getche): ");
-    c2 = getche();    // membaca karakter dan menampilkannya
+    c2 = getche();
 
-    // menampilkan kembali karakter yang dimasukkan
     printf("\nKarakter yang dimasukkan: %c\n\n", c2);
 
-
-    // ================================
-    // Input menggunakan getch()
-    // getch() membaca satu karakter tanpa menampilkannya
-    // di layar saat diketik
-    // ================================
     printf("Masukkan satu karakter (getch): ");
-    c3 = getch();     // membaca karakter tanpa echo
+    c3 = getch();     
 
-    // menampilkan karakter setelah input selesai
     printf("\nKarakter yang dimasukkan: %c\n", c3);
 
     return 0;
 }
+/*1. Program menggunakan library stdio.h untuk fungsi input/output
+   seperti printf() dan getchar().
+
+2. Library conio.h digunakan untuk fungsi getch() dan getche().
+
+3. Tiga variabel bertipe char (a, b, c) digunakan untuk menyimpan
+   karakter yang dimasukkan oleh pengguna.
+
+4. getchar() membaca satu karakter dari keyboard, tetapi karakter
+   tersebut baru diproses setelah pengguna menekan tombol Enter.
+
+5. getche() membaca satu karakter dan langsung menampilkan karakter
+   tersebut di layar saat ditekan (echo aktif).
+
+6. getch() membaca satu karakter tanpa menampilkan karakter tersebut
+   di layar (echo tidak aktif).
+
+7. Setelah setiap input, program menampilkan kembali karakter yang
+   dimasukkan menggunakan printf().
+*/
