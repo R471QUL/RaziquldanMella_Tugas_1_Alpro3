@@ -12,23 +12,15 @@ int main()
     int detik;
     int jam, menit, sisaDetik;
 
-    // Meminta input jumlah detik
     cout << "Masukkan jumlah detik: ";
     cin >> detik;
 
-    // Menghitung jam
     jam = detik / 3600;
-
-    // Menghitung sisa detik setelah diambil jam
     sisaDetik = detik % 3600;
 
-    // Menghitung menit
     menit = sisaDetik / 60;
-
-    // Menghitung detik tersisa
     sisaDetik = sisaDetik % 60;
 
-    // Menampilkan hasil
     cout << detik << " detik = "
          << jam << " jam "
          << menit << " menit "
